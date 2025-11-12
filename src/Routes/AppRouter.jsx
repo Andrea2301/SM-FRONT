@@ -6,7 +6,9 @@ function AppRouter(){
     return(
         <BrowserRouter>
         <Routes>
+            <Route path="/home" element={<HomePage/>} />
             <Route path="/login" element={<Loginpage/>} />
+            <Router path="/register" element={<Registerpage/>} />
         </Routes>
         </BrowserRouter>
     );
