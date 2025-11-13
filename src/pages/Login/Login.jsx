@@ -8,18 +8,16 @@ function Login() {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    // Aquí iría la lógica de autenticación
-    // Si la autenticación es exitosa, redirigir a la página principal
     navigate("/home");
   }
 
 
   return (
     <div className="login-container">
-      <h1>View login</h1>
+      <h1>Login</h1>
       <form>
-        <input type="text" placeholder="Usuario" />
-        <input type="password" placeholder="Contraseña" />
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
         <button onClick={handleLogin} type="submit">Entrar</button>
       </form>
     </div>
